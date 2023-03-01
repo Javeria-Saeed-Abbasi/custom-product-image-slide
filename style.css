@@ -1,0 +1,140 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    width: 1140px;
+    height:100%;
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+}
+.main-image img 
+{
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+.image-select img
+{
+width: 100%;
+height: 100%;
+display: block;
+}
+.card-left
+{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.card-right
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.active{
+    border: 1px solid greenyellow;
+}
+.image-select .img{
+    width: 135px;
+    height: 100px;
+    object-fit: contain;
+}
+.main-image {
+    display: flex;
+    /* transform: translateX(-600px); */
+    transition: all 0.5s ease;
+}
+.image-select{
+    display: flex;
+    margin-top: 2px;
+}
+.form-group label{
+display: block;
+}
+.form-group {
+    /* background: aquamarine; */
+    width: 100%;
+    min-height: 70px;
+    margin-bottom: 20px;
+}
+.form-group .input-group {
+    /* background-color: aqua; */
+    display: flex;
+    /* width: 220px; */
+    /* height: 30px; */
+}
+        .form-group input{
+           width: 70px;
+           border: 1px solid #ccc;
+           outline: none;
+           text-align: center;
+           color: #000;
+             }
+.form-group button{
+    background-color: #212529;
+    border-radius: 0;
+    width: 30px;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.form-group button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.form-group button:hover {
+    color: #ccc;
+}
+/* Zoom In Effect on Product */
+.magnify {
+    /* position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%; */
+    display: inline-block;
+  }
+  
+  .magnify .magnified {
+    display: block;
+    z-index: 10;
+    margin: auto;
+    width: 556px;
+    height: 360px;
+    /* border: 5px solid #fff; */
+  }
+  .magnify .magnifier {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    z-index: 20;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-size: 1000%;
+    background-repeat: no-repeat;
+    margin-left: -100px !important;
+    margin-top: -100px !important;
+    pointer-events: none;
+  }
+
+  .zoomArea {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border:1px solid
+  }
+  
+  .zoomArea > image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
